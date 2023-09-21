@@ -1,0 +1,50 @@
+[
+  {
+    "icon": "feed",
+    "caption": "Главная лента",
+    "to": "/",
+    "id": "feed",
+    "metrikaKey": "feed",
+    "schemaText": "Все и сразу. Собрали новости, видео, музыку и афишу вместе!"
+  },
+  {
+    "icon": "news",
+    "caption": "Новости",
+    "to": "/news",
+    "id": "news",
+    "metrikaKey": "news",
+    "schemaText": "Новости и статьи по вашим интересам"
+  },
+  {
+    "icon": "video",
+    "caption": "Видео",
+    "to": "/video",
+    "id": "video",
+    "metrikaKey": "video",
+    "schemaText": "Видео из разных источников в одном месте"
+  },
+  {
+    "icon": "event",
+    "caption": "События",
+    "to": "/events",
+    "id": "event",
+    "metrikaKey": "events",
+    "schemaText": "Более 30 000 событий ежедневно"
+  },
+  {
+    "icon": "clip",
+    "caption": "Сюжеты",
+    "to": "/clip",
+    "id": "clip",
+    "metrikaKey": "stories",
+    "schemaText": "Короткие вертикальные видео от авторов"
+  },
+  {
+    "icon": "music",
+    "caption": "Музыка",
+    "to": "/new-music",
+    "id": "music",
+    "metrikaKey": "music",
+    "schemaText": "Огромное количество треков без рекламы"
+  }
+]

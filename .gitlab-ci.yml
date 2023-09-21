@@ -1,0 +1,149 @@
+include:
+  - project: infrastructure/ci.cd/common
+    ref: master
+    file:
+      - common.yml
+
+
+build:
+  extends: .base_build
+  variables:
+    DOCKERFILE: "Dockerfile"
+    DOCKERFILE_CONTEXT: "${CI_PROJECT_DIR}"
+    REGISTRY_URL: harbor.yarustech.ru/development-irus/frontend/yarus-web-new
+    IMAGE_TAG: "${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}"
+    BUILD_ARGS: "ENV:${ENV}"
+  rules:
+    - if: $CI_COMMIT_REF_NAME == 'master'
+      variables:
+        ENV: "prod"
+      when: manual
+    - if:  $CI_COMMIT_REF_NAME == 'dev'
+      variables:
+        ENV: "dev"
+      when: always
+    - if: $CI_COMMIT_REF_NAME != 'master' || $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == 'dev'
+      variables:
+        ENV: "dev"
+      when: manual
+      
+security:
+  stage: security
+  allow_failure: true
+  trigger:
+    include:
+    # Path to the shared repo
+      - project: 'security/ci.cd/security-common'
+        # a proper branch name
+        file: 'common-security.yml'
+  needs: ["build"]
+  rules:
+    - if: $CI_COMMIT_BRANCH =~ /(develop|master)/
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /(develop|master)/
+    - when: manual
+  variables:
+    SEC_IMAGE_SCAN_ENABLE: "false"
+    SEC_IMAGE_TO_SCAN_NAME: "development-irus/frontend/yarus-web-new"
+    SEC_IMAGE_TO_SCAN_TAG: "${CI_COMMIT_SHORT_SHA}"
+
+
+    # DAST settings
+    SEC_DAST_ENABLE: "true"
+    SEC_DAST_URL_TO_SCAN: "https://dev1-new.yarusdev.ru"
+
+    # SAST (csharp) settings
+    SEC_SONARQUBE_ENABLE: "true"
+    SEC_SONARQUBE_PROJECT_KEY: "${SONAR_PROJECT_KEY}"
+    SEC_SONARQUBE_TOKEN: "${SONAR_TOKEN}"
+    SEC_DD_KEY: "${SEC_DD_KEY}"
+
+deploy dev1:
+  extends: .base_deploy
+  variables:
+    PROJECT: "yarus-web-new"
+    CLUSTER: "dev"
+    NAMESPACE: "frontend"
+    HELM_VALUE: "${CI_PROJECT_DIR}/ci-deploy/dev/dev1-values.yaml"
+    REGISTRY_URL: harbor.yarustech.ru/development-irus/frontend/yarus-web-new
+    IMAGE_TAG: "${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}"
+    DEPLOY_TIMEOUT: "4m"
+  rules:
+    - when: manual
+  needs:
+    - build
+
+deploy alfa:
+  extends: .base_deploy
+  variables:
+    PROJECT: "dev2-yarus-web"
+    CLUSTER: "dev"
+    NAMESPACE: "frontend"
+    HELM_VALUE: "${CI_PROJECT_DIR}/ci-deploy/dev/dev2-yarus-web.yaml"
+    REGISTRY_URL: harbor.yarustech.ru/development-irus/frontend/yarus-web-new
+    IMAGE_TAG: "${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}"
+    DEPLOY_TIMEOUT: "4m"
+  rules:
+    - when: manual
+  needs:
+    - build
+
+deploy beta:
+  extends: .base_deploy
+  variables:
+    PROJECT: "dev3-yarus-web"
+    CLUSTER: "dev"
+    NAMESPACE: "frontend"
+    HELM_VALUE: "${CI_PROJECT_DIR}/ci-deploy/dev/dev3-yarus-web.yaml"
+    REGISTRY_URL: harbor.yarustech.ru/development-irus/frontend/yarus-web-new
+    IMAGE_TAG: "${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}"
+    DEPLOY_TIMEOUT: "4m"
+  rules:
+    - when: manual
+  needs:
+    - build
+
+deploy gamma:
+  extends: .base_deploy
+  variables:
+    PROJECT: "dev4-yarus-web"
+    CLUSTER: "dev"
+    NAMESPACE: "frontend"
+    HELM_VALUE: "${CI_PROJECT_DIR}/ci-deploy/dev/dev4-yarus-web.yaml"
+    REGISTRY_URL: harbor.yarustech.ru/development-irus/frontend/yarus-web-new
+    IMAGE_TAG: "${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}"
+    DEPLOY_TIMEOUT: "4m"
+  rules:
+    - when: manual
+  needs:
+    - build
+
+deploy delta:
+  extends: .base_deploy
+  variables:
+    PROJECT: "dev5-yarus-web"
+    CLUSTER: "dev"
+    NAMESPACE: "frontend"
+    HELM_VALUE: "${CI_PROJECT_DIR}/ci-deploy/dev/dev5-yarus-web.yaml"
+    REGISTRY_URL: harbor.yarustech.ru/development-irus/frontend/yarus-web-new
+    IMAGE_TAG: "${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}"
+    DEPLOY_TIMEOUT: "4m"
+  rules:
+    - when: manual
+  needs:
+    - build
+
+deploy prod:
+  extends: .base_deploy
+  variables:
+    PROJECT: "prod-yarusweb"
+    CLUSTER: "prod"
+    NAMESPACE: "frontend"
+    HELM_VALUE: "${CI_PROJECT_DIR}/ci-deploy/prod/prod-values.yaml"
+    REGISTRY_URL: harbor.yarustech.ru/development-irus/frontend/yarus-web-new
+    IMAGE_TAG: "${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}"
+  needs:
+    - build
+  only:
+    refs:
+      - master
+  when: manual

@@ -1,0 +1,36 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "X493XMRTQA.ru.YaRus",
+        "paths": [
+          "/p/*",
+          "/post/*",
+          "/n/*",
+          "/news/*",
+          "/v/*",
+          "/video/*",
+          "/events",
+          "/e/*",
+          "/event/*",
+          "/u/*",
+          "/user/*",
+          "/f/*",
+          "/feed/*",
+          "/h/*",
+          "/hashtag/*",
+          "/t/*",
+          "/c/*",
+          "/clip/*",
+          "music",
+          "music/*",
+          "miniapps",
+          "ma",
+          "miniapps/*",
+          "ma/*"
+        ]
+      }
+    ]
+  }
+}

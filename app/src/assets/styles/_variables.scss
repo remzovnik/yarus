@@ -1,0 +1,77 @@
+// breakpoints
+$media-lg: 1679px;
+$media-md: 1199px;
+$media-sm: 767px;
+
+// container
+$container-padding-desktop-xl: 5rem;
+$container-width-desktop-xl: 144rem;
+$container-padding-desktop-lg: 5rem;
+$container-width-desktop-lg: 120rem;
+$container-padding-md: 4rem;
+$container-width-md: 76.8rem;
+$container-padding-sm: 1.6rem;
+$container-width-sm: 100%;
+
+// colors
+$white-100-20: rgb(255 255 255 / 20%);
+$white-100-50: rgb(255 255 255 / 50%);
+$white-100-80: rgb(255 255 255 / 80%);
+$white-100: rgb(255 255 255 / 100%);
+$gray-50-50: rgb(246 247 251 / 50%);
+$gray-100: rgb(249 250 252 / 100%);
+$gray-200: rgb(239 241 245 / 100%);
+$gray-300: rgb(231 233 238 / 100%);
+$gray-400: rgb(216 218 224 / 100%);
+$gray-500: rgb(176 176 176 / 100%);
+$gray-600: rgb(31 32 35 / 100%);
+$gray-600-gradient: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(31 32 35 / 60%) 100%);
+$gray-650: rgb(167 167 171 / 100%);
+$gray-700-40: rgb(91 91 91 / 40%);
+$gray-700-60: rgb(91 91 91 / 60%);
+$gray-700-80: rgb(91 91 91 / 80%);
+$gray-700: rgb(119 119 123 / 100%);
+$gray-750: rgb(147 147 147 / 100%);
+$gray-800: rgba(104 104 104 / 100%);
+$gray-800-20: rgb(5 5 7 / 20%);
+$gray-800-60: rgb(5 5 7 / 60%);
+$gray-800-70: rgb(5 5 7 / 70%);
+$gray-800: rgb(104 104 104 / 100%);
+$gray-900: rgb(40 40 40 / 100%);
+$blue-100-15: rgb(74 157 247 / 15%);
+$blue-100-25: rgb(74 157 247 / 25%);
+$blue-100-35: rgb(74 157 247 / 35%);
+$blue-100: rgb(74 157 247 / 100%);
+$blue-200: rgb(68 145 229 / 100%);
+$blue-300: rgb(62 134 212 / 100%);
+$red-100: rgb(235 87 87 / 100%);
+$red-100-40: rgb(235 87 87 / 40%);
+$red-200: rgb(215 55 61 / 100%);
+$red-300: rgb(255 229 230 / 100%);
+$green-100: rgb(39 174 96 / 100%);
+$black-100: rgb(0 0 0 / 100%);
+$black-100-40: rgb(0 0 0 / 40%);
+$black-100-20: rgb(0 0 0 / 20%);
+
+// border radius
+$border-radius-xs: 4px;
+$border-radius-sm: 8px;
+$border-radius-md: 16px;
+$border-radius-lg: 48px;
+
+// box shadow
+$box-shadow-deep: 0 4px 20px rgb(0 0 0 / 18%);
+$box-shadow-soft: 0 4px 20px rgb(0 0 0 / 8%);
+
+// transition durations
+$trs-forward: 0.3s ease-out;
+$trs-back: 0.15s ease-out;
+$trs-music-forward-ease: 0.16s ease;
+$trs-music-forward-linear: 0.16s linear;
+
+// dimensions
+$header-height: 11.4rem;
+
+// font
+$font-family: "Inter", sans-serif;
+$font-family-comic: "Comic-Cat", sans-serif;

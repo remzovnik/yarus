@@ -1,0 +1,28 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.its.yarus",
+      "sha256_cert_fingerprints": [
+        "69:8D:35:08:51:1F:F0:89:7E:71:4D:51:94:B8:79:A1:11:5C:11:6F:B1:FA:44:8F:10:54:61:D3:95:D7:9B:42",
+        "B5:3B:77:F1:08:FE:E1:E4:91:8A:58:FB:E7:68:69:D7:64:9A:62:15:3A:EF:19:27:0C:21:8A:36:5A:21:30:29",
+        "4D:81:59:B6:BD:98:B9:76:C9:24:FC:B7:83:E4:EE:D5:00:25:96:93:E8:5E:1F:62:A7:A9:6D:43:2B:4E:17:DC"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.its.yarus.debug",
+      "sha256_cert_fingerprints": [
+        "14:10:2B:8F:D4:3C:C4:B4:BE:EB:0B:26:F2:10:97:31:2D:DF:BA:C7:00:50:F7:A8:4C:BF:24:0B:73:E6:CE:B8"
+      ]
+    }
+  }
+]

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: Inter;
+  src: url("/fonts/Inter-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Inter;
+  src: url("/fonts/Inter-500.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Comic-Cat;
+  src: url("/fonts/Comic_CAT.otf") format("opentype");
+  font-display: swap;
+}

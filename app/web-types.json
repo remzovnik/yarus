@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json.schemastore.org/web-types",
+  "framework": "vue",
+  "name": "yarus",
+  "version": "1.0.0",
+  "contributions": {
+    "html": {
+      "elements": [
+        {
+          "name": "BaseAvatar",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseButton",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseCheckbox",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseChips",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseInfiniteScroll",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseInput",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseQuote",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseLink",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseRadio",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseRadioGroup",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseReaction",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseSelect",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseSlider",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseSpinner",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseSwitcher",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseTabs",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseTag",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseTextarea",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseModal",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "BaseIcon",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "LayoutBase",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "LayoutSidebar",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        },
+        {
+          "name": "LayoutHeader",
+          "source": {
+            "module": "./src/globalComponents.ts",
+            "symbol": "default"
+          }
+        }
+      ]
+    }
+  }
+}

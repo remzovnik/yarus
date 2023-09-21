@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "vue/setup-compiler-macros": true
+  },
+  "extends": ["plugin:vue/vue3-recommended", "eslint:recommended", "@vue/typescript/recommended", "@vue/prettier", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2021
+  },
+  "plugins": [],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": ["off"],
+    "@typescript-eslint/no-namespace": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "@typescript-eslint/no-inferrable-types": ["off"],
+    "@typescript-eslint/no-namespace": "off",
+    "no-inferrable-types": "off",
+    "no-extra-boolean-cast": "off",
+    "vue/require-default-prop": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "vue/script-setup-uses-vars": "error",
+    "vue/multi-word-component-names": 1,
+
+    "vue/first-attribute-linebreak": [
+      1,
+      {
+        "singleline": "ignore",
+        "multiline": "below"
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}

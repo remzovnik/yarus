@@ -1,0 +1,26 @@
+  <svg  fill="none" viewBox="0 0 24 24">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M4.854 4.717a.15.15 0 0 0-.15.15v3.946a.85.85 0 0 1-1.7 0V4.867a1.85 1.85 0 0 1 1.85-1.85H8.8a.85.85 0 0 1 0 1.7H4.854ZM4.854 19.303a.15.15 0 0 1-.15-.15v-3.946a.85.85 0 1 0-1.7 0v3.946a1.85 1.85 0 0 0 1.85 1.85H8.8a.85.85 0 0 0 0-1.7H4.854ZM19.127 4.716a.15.15 0 0 1 .15.15v3.946a.85.85 0 1 0 1.7 0V4.866a1.85 1.85 0 0 0-1.85-1.85h-3.945a.85.85 0 0 0 0 1.7h3.945Z"
+        fill="currentColor"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M4.805 20.397 20.397 4.805l-1.202-1.202L3.603 19.195l1.202 1.202Z"
+        fill="currentColor"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M19.195 20.397 3.603 4.805l1.202-1.202 15.592 15.592-1.202 1.202Z"
+        fill="currentColor"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M19.127 19.303a.15.15 0 0 0 .15-.15v-3.946a.85.85 0 1 1 1.7 0v3.946a1.85 1.85 0 0 1-1.85 1.85h-3.945a.85.85 0 0 1 0-1.7h3.945Z"
+        fill="currentColor"
+      />
+    </svg>

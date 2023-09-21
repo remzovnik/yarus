@@ -1,0 +1,14 @@
+  <svg v-if="name === 'arrow2-diagonal'" fill="none" viewBox="0 0 24 24">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M5.713 18.364a.922.922 0 01-.008-1.303L17.138 5.629a.922.922 0 011.303.007.922.922 0 01.008 1.304L7.017 18.372a.922.922 0 01-1.304-.008z"
+        fill="currentColor"
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M17.834 16.465a.935.935 0 01-.926-.93l-.033-8.333-8.332-.033a.935.935 0 01-.93-.925.908.908 0 01.914-.918l9.259.036a.934.934 0 01.929.93l.037 9.258a.908.908 0 01-.918.915z"
+        fill="currentColor"
+      />
+    </svg>

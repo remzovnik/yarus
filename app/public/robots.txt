@@ -1,0 +1,26 @@
+User-agent: Applebot
+Allow: /
+
+User-agent: AASA-Bot/1.0.0
+Allow: /
+
+User-agent: *
+Disallow: /n/
+Disallow: /news/
+Allow: /news/trends
+Allow: /news/city/
+Allow: /news/federal
+
+User-agent: Yandex
+Clean-param: cm_id /
+Clean-param: utm /
+Clean-param: referrer /
+Clean-param: adjust_reftag /
+Clean-param: ym_tracking_id /
+# Метка которую добавляет FB к ссылкам размещенным в FB (мешает корректной аналитике в YM)
+Clean-param: fbclid /
+Clean-param: utm_referrer /
+Clean-param: utm_referer /
+
+Allow: /apple-app-site-association
+Allow: /.well-known/apple-app-site-association

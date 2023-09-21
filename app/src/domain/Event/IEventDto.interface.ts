@@ -1,0 +1,45 @@
+import { User } from "@/domain/User/User";
+import { IEventImage } from "@/domain/Event/IEventImage.interface";
+import { IEventCategory } from "@/domain/Event/IEventCategory.interface";
+import { Id, Timestamp } from "@/_core/Base.type";
+import { IEventPlace } from "@/domain/Event/IEventPlace.interface";
+import { IEventPhoto } from "@/domain/Event/IEventPhoto.interface";
+import { Event } from "@/domain/Event/Event";
+
+export interface IEventDto {
+  id: Id;
+  createdAt: Timestamp;
+  name: string;
+  description: string;
+  category: string;
+  categoryID: Id;
+  site: string;
+  photos: IEventPhoto[];
+  images: IEventImage[];
+  tags: string[];
+  ageRestriction: number;
+  link: string;
+  status: number;
+  ratingCount: number;
+  minPrice: number;
+  maxPrice: number;
+  author: User;
+  rating: number;
+  estimate: boolean;
+  isFree: boolean;
+  isOnline: boolean;
+  detailURL: string;
+  soldOut: boolean;
+  similar: Event[];
+  place: string;
+  subscribedUserIds: Id[];
+  subscribersCount: number;
+  seance: IEventPlace;
+  statusString: string;
+  subscribedUser: User[];
+  categories: IEventCategory[];
+  since: number;
+  till: number;
+  checkPrice: boolean;
+  cover: string;
+}

@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+dist
+output
+dist-ssr
+*.local
+.idea
+*.log
+components.d.ts
+yarn-error.log
